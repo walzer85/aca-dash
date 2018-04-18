@@ -16,12 +16,11 @@ function map(array, iteratee){
     newArray = [];
     //loop through the array, doing iteratee to it each time
     for (i = 0; i <= array.length; i++) {
-
+        newArray.push(array[i] + iteratee )
     }
-
+    return newArray;
 }
 
-return newArray;
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 //create a function called `filter`, it should take 2 parameters `array` and `iteratee`
@@ -68,7 +67,7 @@ function head(theArray){
 //add the item from each loop to the new array
 //return the new array
 function reverse(theArray){
-    
+
 }
 
 //create a new array
