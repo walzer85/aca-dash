@@ -15,7 +15,7 @@ function map(array, iteratee){
     //create an empty array
     newArray = [];
     //loop through the array, doing iteratee to it each time
-    for (i = 0; i <= array.length; i++) {
+    for (i = 0; i < array.length; i++) {
         newArray.push(array[i] + iteratee )
     }
     return newArray;
