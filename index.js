@@ -38,7 +38,9 @@ function filter(array, iteratee){
     //If true add value to newArray, if false do nothing
     for (i = 0; i < array.length; i++){
         if (array[i] = true) {
-            
+            newArray.push(array[i])
+        } else {
+            return    
         }
     }
     return newArray;
