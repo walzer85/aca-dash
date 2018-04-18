@@ -36,9 +36,14 @@ function filter(array, iteratee){
     newArray =[];
     //loop through array, returning true or fales on iteratee
     //If true add value to newArray, if false do nothing
+    for (i = 0; i < array.length; i++){
+        if (array[i] = true) {
+            
+        }
+    }
+    return newArray;
 }
 
-return newArray;
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 //create a function called `find`, it should take 2 parameters `theArray` and `fnc`
