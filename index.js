@@ -12,8 +12,16 @@
 //add the returned value from iteratee tp myNewArray
 //after looping, return  myNewArray
 function map(array, iteratee){
+    //create an empty array
+    newArray = [];
+    //loop through the array, doing iteratee to it each time
+    for (i = 0; i <= array.length; i++) {
+
+    }
 
 }
+
+return newArray;
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 //create a function called `filter`, it should take 2 parameters `array` and `iteratee`
@@ -25,8 +33,13 @@ function map(array, iteratee){
 //iteratee will return true or false, if true add the item to myNewArray else do not
 //after looping, return myNewArray
 function filter(array, iteratee){
-
+    //create an empty array
+    newArray =[];
+    //loop through array, returning true or fales on iteratee
+    //If true add value to newArray, if false do nothing
 }
+
+return newArray;
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 //create a function called `find`, it should take 2 parameters `theArray` and `fnc`
@@ -41,12 +54,13 @@ function find(theArray, fnc){
 
 //return the last item in theArray
 function findLast(theArray){
-
+    return theArray[theArray.length -1];
 }
+
 
 //return the first element of the array
 function head(theArray){
-
+    return theArray[0];
 }
 
 //create a new array
@@ -54,7 +68,7 @@ function head(theArray){
 //add the item from each loop to the new array
 //return the new array
 function reverse(theArray){
-
+    
 }
 
 //create a new array
