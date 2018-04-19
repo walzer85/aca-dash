@@ -11,6 +11,12 @@
 //iteratee is a function that must return something, capture whatever it returns in a variable
 //add the returned value from iteratee tp myNewArray
 //after looping, return  myNewArray
+function iteratee(array) {
+    for (i = 0; i < array.length; i++) {
+        
+    }
+}
+
 function map(array, iteratee){
     //create an empty array
     newArray = [];
@@ -39,9 +45,7 @@ function filter(array, iteratee){
     for (i = 0; i < array.length; i++){
         if (array[i] = true) {
             newArray.push(array[i])
-        } else {
-            return    
-        }
+        }  
     }
     return newArray;
 }
