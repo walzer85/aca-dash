@@ -13,13 +13,13 @@
 //after looping, return  myNewArray
 function iteratee(array) {
     for (i = 0; i < array.length; i++) {
-        
+
     }
 }
 
 function map(array, iteratee){
     //create an empty array
-    newArray = [];
+    let newArray = [];
     //loop through the array, doing iteratee to it each time
     for (i = 0; i < array.length; i++) {
         newArray.push(array[i] + iteratee )
@@ -39,7 +39,7 @@ function map(array, iteratee){
 //after looping, return myNewArray
 function filter(array, iteratee){
     //create an empty array
-    newArray =[];
+    let newArray =[];
     //loop through array, returning true or fales on iteratee
     //If true add value to newArray, if false do nothing
     for (i = 0; i < array.length; i++){
@@ -78,8 +78,12 @@ function head(theArray){
 //add the item from each loop to the new array
 //return the new array
 function reverse(theArray){
-
-}
+    let newArray = [];
+    for (i = theArray.length - 1; i >= 0; i--) {;
+        newArray.pop(theArray[i]);
+    }
+    return newArray;
+}  
 
 //create a new array
 //loop theArray
