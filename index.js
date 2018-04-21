@@ -91,9 +91,10 @@ function reverse(theArray){
 //return the new array
 function tail(theArray){
     let newArray = [];
-    for (i = 1; i < array.length - 1; i++) {
-
+    for (i = 1; i < theArray.length; i++) {
+        newArray.push(theArray[i]);
     }
+    return newArray;
 }
 
 //implement the most basic sorting algorithm there is
