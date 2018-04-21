@@ -108,8 +108,13 @@ function tail(theArray){
 //after each for loop check the variable, if true, continue the while loop
 //if false return theArray
 function sort(theArray){
-
+    while (i <= theArray.length) {
+        if (theArray[i] < (theArray[i] + 1) {
+            
+        }
+    }
 }
+
 
 exports.map = map;
 exports.filter = filter;
