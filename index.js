@@ -80,7 +80,7 @@ function head(theArray){
 function reverse(theArray){
     let newArray = [];
     for (i = theArray.length - 1; i >= 0; i--) {;
-        newArray.pop(theArray[i]);
+        newArray.push(theArray[i]);
     }
     return newArray;
 }  
@@ -90,7 +90,10 @@ function reverse(theArray){
 //add the item from each loop to the new array except the first item
 //return the new array
 function tail(theArray){
+    let newArray = [];
+    for (i = 1; i < array.length - 1; i++) {
 
+    }
 }
 
 //implement the most basic sorting algorithm there is
