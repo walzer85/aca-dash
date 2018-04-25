@@ -11,18 +11,12 @@
 //iteratee is a function that must return something, capture whatever it returns in a variable
 //add the returned value from iteratee tp myNewArray
 //after looping, return  myNewArray
-function iteratee(array) {
-    for (i = 0; i < array.length; i++) {
-
-    }
-}
-
 function map(array, iteratee){
     //create an empty array
     let newArray = [];
     //loop through the array, doing iteratee to it each time
     for (i = 0; i < array.length; i++) {
-        newArray.push(array[i] + iteratee )
+        newArray.push(iteratee(arr[i]));
     }
     return newArray;
 }
@@ -43,7 +37,7 @@ function filter(array, iteratee){
     //loop through array, returning true or fales on iteratee
     //If true add value to newArray, if false do nothing
     for (i = 0; i < array.length; i++){
-        if (array[i] = true) {
+        if (iteratee(array[i])) {
             newArray.push(array[i])
         }  
     }
@@ -58,7 +52,10 @@ function filter(array, iteratee){
 //fnc will return true or false, if true return the item 
 //after looping, return null
 function find(theArray, fnc){
-
+    //create a new empty array
+    let newArray = [];
+    //loop through the array, running a function to find a vlaue that meets the function
+    //
 }
 
 
