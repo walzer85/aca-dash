@@ -55,7 +55,12 @@ function find(theArray, fnc){
     //create a new empty array
     let newArray = [];
     //loop through the array, running a function to find a vlaue that meets the function
-    //
+    for (i = 0; i < array.length; i++) {
+        if (fnc(arr[i])){
+            return(arr[i])
+        }
+    }
+    return null;
 }
 
 
