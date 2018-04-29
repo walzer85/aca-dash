@@ -67,12 +67,14 @@ function find(theArray, fnc){
 
 //return the last item in theArray
 function findLast(theArray){
+    //returns the last value in the array
     return theArray[theArray.length -1];
 }
 
 
 //return the first element of the array
 function head(theArray){
+    //returns the first value in the array
     return theArray[0];
 }
 
@@ -82,7 +84,9 @@ function head(theArray){
 //return the new array
 function reverse(theArray){
     let newArray = [];
-    for (i = theArray.length - 1; i >= 0; i--) {;
+    //loop through the array, starting from the end moving to the beginning
+    for (i = theArray.length - 1; i >= 0; i--) {
+        //pushes the reversed values to the new array
         newArray.push(theArray[i]);
     }
     return newArray;
@@ -93,8 +97,11 @@ function reverse(theArray){
 //add the item from each loop to the new array except the first item
 //return the new array
 function tail(theArray){
+    //create a new array to put all of your outputs into
     let newArray = [];
+    //loop through the array starting at index 1, skipping the first value
     for (i = 1; i < theArray.length; i++) {
+        //push all the values after index 0 into the new array
         newArray.push(theArray[i]);
     }
     return newArray;
