@@ -115,9 +115,9 @@ function sort(theArray){
         let swap = true;
         for (i = 0; i < theArray.length; i++) {
             if (theArray[i] > theArray[i+1]) {
-                let iPersist = arr[i];
+                let iPersist = theArray[i];
                 theArray[i] = theArray[i+1];
-                theArray[x+1] = iPersist;
+                theArray[i+1] = iPersist;
                 let swap = false
             }
         }
