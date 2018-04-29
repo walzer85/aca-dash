@@ -110,9 +110,16 @@ function tail(theArray){
 //after each for loop check the variable, if true, continue the while loop
 //if false return theArray
 function sort(theArray){
-    while (i <= theArray.length) {
-        if (theArray[i] < (theArray[i] + 1) {
-            
+    let swap = false;
+    while (!swap) {
+        let swap = true;
+        for (i = 0; i < theArray.length; i++) {
+            if (theArray[i] > theArray[i+1]) {
+                let iPersist = arr[i];
+                theArray[i] = theArray[i+1];
+                theArray[x+1] = iPersist;
+                let swap = false
+            }
         }
     }
 }
