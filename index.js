@@ -122,6 +122,7 @@ const sort = (theArray) => {
             }
         }
     }
+    return theArray;
 }
 
 
