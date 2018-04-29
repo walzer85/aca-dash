@@ -15,6 +15,7 @@ function map(array, iteratee){
     //create an empty array
     let newArray = [];
     //loop through the array, doing iteratee to it each time
+    //after iteratee has been run on the array index, push that new value into the new array
     for (i = 0; i < array.length; i++) {
         newArray.push(iteratee(arr[i]));
     }
@@ -112,12 +113,18 @@ function tail(theArray){
 const sort = (theArray) => {
     let swap = false;
     while (!swap) {
+        //only sort the array if swap = false
         swap = true;
+        //change swap to true for the time being
         for (i = 0; i < theArray.length; i++) {
             if (theArray[i] > theArray[i+1]) {
+                //house the original value in a new variable to call for i+1
                 let iPersist = theArray[i];
+                //make i equal i+1, which flips the lower value to the lower index
                 theArray[i] = theArray[i+1];
+                //gives our saved value to i+1, putting the higher value in the higher index
                 theArray[i+1] = iPersist;
+                //change swap back to false to keep the while loop running
                 swap = false
             }
         }
