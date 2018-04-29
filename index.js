@@ -109,16 +109,16 @@ function tail(theArray){
 //if a swap is done set it to true
 //after each for loop check the variable, if true, continue the while loop
 //if false return theArray
-function sort(theArray){
+const sort = (theArray) => {
     let swap = false;
     while (!swap) {
-        let swap = true;
+        swap = true;
         for (i = 0; i < theArray.length; i++) {
             if (theArray[i] > theArray[i+1]) {
                 let iPersist = theArray[i];
                 theArray[i] = theArray[i+1];
                 theArray[i+1] = iPersist;
-                let swap = false
+                swap = false
             }
         }
     }
